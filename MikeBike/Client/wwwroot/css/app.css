@@ -36,23 +36,19 @@ h1:focus {
     border-image: none;
     border-radius: 50% 50% 50% 50%;
     border-style: solid;
-    border-width: 5px;
-    height: 200px;
-    width: 200px;
+    border-width: 10px;
+    height: fit-content;
+    width: fit-content;
     overflow: hidden;
 }
 
 img {
-    height: 100%;
-    width: 100%;
-}
-
-div > h2 {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+    height: min-content;
+    width: min-content;
 }
 
 .page-background-class {
-    background-image: url(../images/wallpaper.jpg)
+    background-color: #A8EB12;
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,255,89,1) 15%, rgba(0,212,255,1) 100%);*/
 }

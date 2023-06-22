@@ -1,3 +1,4 @@
+using BlazorPro.BlazorSize;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MikeBike.Client;
@@ -10,5 +11,6 @@ builder.Services.AddHttpClient("MikeBike.ServerAPI", client => client.BaseAddres
 
 // Supply HttpClient instances that include access tokens when making requests to the server project
 builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("MikeBike.ServerAPI"));
+builder.Services.AddMediaQueryService();
 
 await builder.Build().RunAsync();
