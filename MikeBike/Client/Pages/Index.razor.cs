@@ -15,7 +15,7 @@ namespace MikeBike.Client.Pages
 
         private void LinktoJCA()
         {
-            JSRuntime?.InvokeVoidAsync("open", "https://secure.everyaction.com/slwvQqNf3ES-Zo1eo14P5Q2", "_blank");
+            JSRuntime?.InvokeVoidAsync("open", "http://bit.ly/423uOD4", "_blank");
         }
 
         private void LinktoPillars()
